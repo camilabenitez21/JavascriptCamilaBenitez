@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio | Fineline English Academy</title>
+        <link rel="shortcut icon" href="../img/logo.PNG" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+
+    
+
+    <main>
+        <div class="testtitulo">
+            <h1>TEST YOUR ENGLISH</h1>
+        </div>
+        <div class="container">
+            <section id="p0">
+                <h3>1- What time do you get up every day? </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">I get up at 7 o'clock.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">I gets up at 7 o'clock.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">I like going to the gym in the mornings.
+                </label>
+            </section>
+            <section id="p1">
+                <h3>2- What are you doing now? </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">I always work from 8 to 5.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">I am listening to music.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">I went to my sister's house.
+                </label>
+            </section>
+            <section id="p2">
+                <h3>3- What did you do yesterday? </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">I don't know.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">I sleep with my dog.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">I went shopping.
+                </label>
+            </section>
+            <section id="p3">
+                <h3>4- What are you plans for this vacations?  </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">I am going to visit my grandma in Sweden.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">I like going to the beach.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">I will go.
+                </label>
+            </section>
+            <section id="p4">
+                <h3>5- Who created the phone? </h3>
+                <label class="preguntas">
+                    <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">It was created by Graham Bell.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Graham Bell creates the phone.
+                </label>
+                <label class="preguntas">
+                    <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Graham Bell did created the phone.
+                </label>
+            </section>
+            <button onclick="corregir()">SUBMIT</button>
+            <h2 class="correct">Correct Answers: <span id="resultado"></span></h2>
+        </div>
+
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
